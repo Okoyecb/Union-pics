@@ -116,7 +116,6 @@ p {
 
 @media only screen and (max-width: 375px) {
   .card-grid {
-    /* padding-left: 35px !important; */
     margin-left: -15px !important;
   }
 
@@ -128,12 +127,10 @@ p {
 
 @media only screen and (min-width: 891px) and (max-width: 1800px) {
   .card-grid {
-    /* padding-left: 30px !important; */
     margin-left: 15px !important;
   }
   .card-wrap {
     width: 22.7% !important;
-    /* padding-left: 100px !important; */
   }
 }
 

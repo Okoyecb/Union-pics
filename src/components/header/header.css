@@ -30,6 +30,14 @@ img.union-logo{
 
 }
 
+#searchInput{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color:#fff;
+}
+
 .drop-down-menu{
     list-style: none;
     width: 60%;
@@ -63,10 +71,15 @@ ul li {
 
 .search{
     position: absolute;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     font-size: 20px !important;
     color: #FFFFFF !important;
 
+}
+
+.search-items{
+    position: absolute;
+    margin-left: 100px;
 }
 
 /* .search-box {
