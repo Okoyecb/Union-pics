@@ -1,6 +1,5 @@
 /* Footer */
 .footer {
-
   margin: auto;
   width: 100%;
   max-width: 960px;
@@ -15,28 +14,30 @@
   color: #333333;
 }
 
-.Arr,.TC , .policy, .disclaimer{
-    padding-right: 20px;
+.Arr,
+.TC,
+.policy,
+.disclaimer {
+  padding-right: 20px;
 }
 
-.faq{
-    padding-left: 20px;
-} 
-
-@media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
-    .footer{
-        display:flex;
-        justify-content: center;
-        font-size: 13px;
-    }
+.faq {
+  padding-left: 20px;
 }
 
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+  }
+}
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .footer{
-    display:flex;
-    justify-content: center;    
-     font-size: 8px;
-     font-weight: bold;
-    }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    font-size: 8px;
+    font-weight: bold;
+  }
 }

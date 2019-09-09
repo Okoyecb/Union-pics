@@ -35,17 +35,17 @@ export default class Header extends React.Component{
         <Router>
           <div>
             <nav className="navbar navbar-light">
-              <div className="menu-handles">
-                <FontAwesomeIcon icon={faBars} className="hamburger" onClick={this.showMenu} />
-              </div>
-              <div className="search-items">
-              <input id="searchInput" className="searchReady" type="search" placeholder="SEARCH BY KEYWORD"/>
-              <FontAwesomeIcon icon={faSearch} className="search" />
-              </div>
-              <Link to={'/'}><h2 className="union-title">Union<span className="union-faded">Pics</span></h2></Link>
-              <form className="form-inline">
-                <img src="https://res.cloudinary.com/okoyecb/image/upload/v1566900876/unionlogo_l2lqbb.png" className="union-logo" alt="" />
-              </form>
+                <div className="menu-handles">
+                   <FontAwesomeIcon icon={faBars} className="hamburger" onClick={this.showMenu} />
+                </div>
+                <div className="search-items">
+                  <input id="searchInput" className="searchReady" type="search" placeholder="SEARCH BY KEYWORD"/>
+                  <FontAwesomeIcon icon={faSearch} className="search" />
+                </div>
+                <Link to={'/'}><h2 className="union-title">Union<span className="union-faded">Pics</span></h2></Link>
+                <form className="form-inline">
+                  <img src="https://res.cloudinary.com/okoyecb/image/upload/v1566900876/unionlogo_l2lqbb.png" className="union-logo" alt="" />
+                </form>
             </nav>
             {
               this.state.showMenu

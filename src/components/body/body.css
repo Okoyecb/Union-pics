@@ -24,15 +24,15 @@ img {
 }
 
 .subtitle {
-  font-size: 16px; 
-  color: #333333; 
+  font-size: 16px;
+  color: #333333;
   font-weight: 600;
   margin-top: 5px;
 }
 
-.item{
-    color: #333333;
-    font-size: 13px;
+.item {
+  color: #333333;
+  font-size: 13px;
 }
 
 .size {
@@ -65,7 +65,6 @@ p {
   width: 100%;
   display: inline-block;
   margin-top: 50px;
-  /* margin-left: 60px; */
   padding-left: 5%;
   margin-bottom: 50px;
 }
@@ -86,7 +85,6 @@ p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 890px) {
-
   .card-grid {
     margin-left: 0px !important;
   }
@@ -134,13 +132,12 @@ p {
   }
 }
 
-
-@media only screen  and (min-width : 1801px) {
-    .card-wrap {
-      width: 22.7% !important;
-      padding-left: 100px !important;
-    }
-    }
+@media only screen and (min-width: 1801px) {
+  .card-wrap {
+    width: 22.7% !important;
+    padding-left: 100px !important;
+  }
+}
 
 .card {
   background-color: #f0f0f0;
