@@ -50,6 +50,11 @@ input::placeholder {
   position: relative;
 }
 
+.searchReady:focus {
+  width: 500px;
+  transition: 0.3s;
+}
+
 ul li {
   display: block;
   z-index: 1000 !important;

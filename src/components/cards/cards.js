@@ -20,12 +20,9 @@ const card = props => {
                 <p className="item">{props.item}</p>
               </div>
               <div className="right">
-                <img src={download} className="download" />
+                <img src={download} className="download"  alt="Download Button"/>
               </div>
             </div>
-          {/* <Link to={''} className="card lightbox">
-           
-          </Link> */}
         </div>
        
     </div>
