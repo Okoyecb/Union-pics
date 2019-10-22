@@ -1,6 +1,8 @@
 import React from "react";
 import "./card.css";
-import download from '../cards/download.svg';
+// import download from '../cards/download.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretSquareDown } from '@fortawesome/free-solid-svg-icons';
 // import {Link} from 'react-router-dom';
 
 
@@ -20,7 +22,8 @@ const card = props => {
                 <p className="item">{props.item}</p>
               </div>
               <div className="right">
-                <img src={download} className="download"  alt="Download Button"/>
+                {/* <img src={download} className="download"  alt="Download Button"/> */}
+                <FontAwesomeIcon icon={faCaretSquareDown} className="caret" />
               </div>
             </div>
         </div>

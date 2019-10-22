@@ -52,10 +52,11 @@ img {
   margin-top: 5px;
 }
 
-.download{
+.caret{
   width: 20px;
   height: 20px;
   margin-top: 10px;
+  margin-left: 30px;
 }
 
 .item {
@@ -120,12 +121,26 @@ p {
     width: 30.3% !important;
     padding-left: 12px;
   }
+
+  .caret{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .card-wrap {
     width: 45.45% !important;
     padding-left: 35px;
+  }
+
+  .caret{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
   }
 }
 
@@ -138,6 +153,13 @@ p {
   .card-wrap {
     width: 100%;
   }
+
+  .caret{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 20px !important;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -148,6 +170,13 @@ p {
   .card-wrap {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .caret{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 40px !important;
   }
 }
 
