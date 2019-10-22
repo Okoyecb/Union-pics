@@ -9,8 +9,8 @@ const card = props => {
   return (
     <div>
     <div className="card-wrap">
-      <div className="image">
-      <img src={props.image} className="card-img" onClick={props.showLightbox} alt=""/>
+      <div className="image" onClick={props.showLightbox}>
+      <img src={props.image} className="card-img" alt=""/>
       </div>
             <div>
               <div className="full">
