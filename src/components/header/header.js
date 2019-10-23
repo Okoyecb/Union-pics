@@ -40,7 +40,7 @@ export default class Header extends React.Component{
                 </div>
                 <div className="search-items">
                   <FontAwesomeIcon icon={faSearch} className="search" />
-                  <input id="searchInput" className="searchReady" type="search" placeholder="SEARCH BY KEYWORD"/>
+                  <input id="searchInput" className="searchReady" type="search" placeholder="SEARCH FOR IMAGE"/>
                 </div>
                 <Link to={'/'}><h2 className="union-title">Union<span className="union-faded">Pics</span></h2></Link>
                 <form className="form-inline">
