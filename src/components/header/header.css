@@ -1,205 +1,145 @@
-nav{
-    background-color: #2D9CDB;
+nav {
+  background-color: #2d9cdb;
+  height: 70px;
 }
 
-img.union-logo{
+img.union-logo {
   width: 80px !important;
-  margin-right: 50px ;
+  margin-right: 50px;
 }
 
-.union-title{
-    font-size: 20px !important;
-    color: #FFFFFF;
-    font-weight: bold;
-    margin-bottom: 0px;
-
+.union-title {
+  font-size: 20px !important;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 0px;
 }
 
-.union-faded{
-    font-weight: 400 !important;
-    color: #f0f0f0 !important;
+.union-faded {
+  font-weight: 400 !important;
+  color: #f0f0f0 !important;
 }
 
-.menu{
-    font-size: 16px;
-    color: #FFFFFF;
-    display: block;
-    width: 20%;
-    z-index: 100;
-    position: absolute;
-
+.menu {
+  font-size: 16px;
+  color: #ffffff;
+  display: block;
+  width: 20%;
+  z-index: 100;
+  position: absolute;
 }
 
-.drop-down-menu{
+#searchInput {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  color: #fff;
+  margin-left: 30px;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.drop-down-menu {
+  list-style: none;
+  width: 60%;
+  background-color: #2d9cdb;
+  display: inline-block;
+  margin: 0;
+  height: 300px;
+  position: relative;
+}
+
+.searchReady:focus {
+  width: 500px;
+  transition: 2s;
+}
+
+ul li {
+  display: block;
+  z-index: 1000 !important;
+}
+
+.hamburger {
+  color: #ffffff !important;
+  font-size: 25px;
+  margin-top: 3px;
+}
+
+.menu-handles {
+  margin-left: 50px;
+}
+
+.list-item {
+  color: #ffffff !important;
+  line-height: 50px;
+  font-size: 16px !important;
+}
+
+.search {
+  position: absolute;
+  font-size: 20px !important;
+  color: #ffffff !important;
+}
+
+.search-items {
+  position: absolute;
+  margin-left: 100px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu-handles {
+    margin-left: 0px !important;
+    border-right: 0px !important;
+  }
+
+  .img.union-logo {
+    margin-right: 0px !important;
+  }
+
+  .union-logo {
+    margin-left: 100px !important;
+    margin-right: 0px !important;
+    width: 80px;
+  }
+
+  .union-title {
+    display: none !important;
+  }
+
+  .form-inline {
+    margin-left: 80px;
+  }
+
+  .drop-down-menu {
     list-style: none;
-    width: 60%;
-    background-color: #2D9CDB;
+    width: 150px;
+    background-color: #2d9cdb;
     display: inline-block;
     margin: 0;
     height: 300px;
     position: relative;
+  }
 }
 
-ul li {
-    display: block;
-    z-index:1000 !important;
-    }
-
-.hamburger{
-    color: #FFFFFF !important;
-    font-size: 20px;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .union-logo {
+    display: none;
+  }
 }
 
-.menu-handles{
-    margin-left: 50px;
-    /* border-right: 1px solid #FFFFFF; */
-}
-
-.list-item{
-    color: #FFFFFF !important;
+@media only screen and (min-width: 1801px) {
+  .list-item {
+    color: #ffffff !important;
     line-height: 50px;
     font-size: 16px !important;
+    margin-left: 50px !important;
+  }
 }
-
-.search{
-    position: absolute;
-    margin-left: 15%;
-    font-size: 20px !important;
-    color: #FFFFFF !important;
-
-}
-
-/* .search-box {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 0px;
-    border-radius: 20px;
-  }
-  .search-box input[type="text"] {
-    -webkit-appearance: none;
-    position: relative;
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    padding: 5px;
-    border: none;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: none;
-    z-index: 1;
-    transition: all 0.5s ease-out 0.5s;
-    outline: none;
-  }
-  .search-box input[type="text"]:focus {
-    width: 280px;
-    height: 30px;
-    margin-right: 20px;
-    transition: all 0.5s ease-out 0s;
-  }
-  .search-box input[type="text"]:focus + span::before {
-    height: 14px;
-    margin: -22px 0 0 -15px;
-    transition: all 0.2s ease-out 0.5s;
-  }
-  .search-box input[type="text"]:focus + span::after {
-    visibility: visible;
-    margin: -22px 0 0 -15px;
-    transition: all 0.2s ease-out 0.7s;
-  }
-  .search-box span {
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    z-index: 10;
-  }
-  .search-box span::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 8px;
-    margin: -4px 0 0 0;
-    background-color: #FFFFFF;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    transition: all 0.2s ease-out 0.2s;
-  }
-  .search-box span::after {
-    content: '';
-    visibility: hidden;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 14px;
-    margin: -36px 0 0 5px;
-    background-color: #FFFFFF;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    transition: all 0.2s ease-out 0s;
-  } */
-  
-
-
-
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-    .navbar{
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .menu-handles{
-        margin-left:  0px !important;
-        border-right: 0px !important;
-    }
-
-    .img.union-logo{
-        margin-right: 0px !important;
-        
-    }
-
-    .union-logo{
-        margin-left: 100px !important;
-        margin-right: 0px !important;
-        width: 80px;
-    }
-
-    .union-title{
-        display: none !important;
-    }
-
-    .form-inline{
-        margin-left: 80px;
-        /* float: right !important; */
-
-    }
-
-    .drop-down-menu{
-        list-style: none;
-        width: 150px;
-        background-color: #2D9CDB;
-        display: inline-block;
-        margin: 0;
-        height: 300px;
-        position: relative; 
-    }
-
-    
-
-}
-
-@media only screen  and (min-width : 1801px) {
-    .list-item{
-        color: #FFFFFF !important;
-        line-height: 50px;
-        font-size: 16px !important;
-        margin-left: 50px !important;
-    }
-    }
